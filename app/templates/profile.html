@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+<div class="card">
+    <div class="top">
+        <img src="{{ url_for('static', filename='Tony.jpg') }}" alt="User's Profile Photo">
+
+        <h1 id="name"> Antonio Brown</h1>
+        <p>@<span id="username">Life_oftony</span>
+            <br>St Thomas, Jamaica
+            <br>Joined <span id="date">July 30, 2021</span>
+        </p>
+    </div>
+
+    <div class="base">
+        <p id="bio">It's a pleasure to introduce myself to you! My name is Antonio Brown, and I'm passionate about
+            leadership and advocacy.</p>
+
+        <div class="details">
+            <div class="columns">
+                <span id="posts">150</span>
+                <p>Posts</p>
+            </div>
+            <div class="columns">
+                <span id="following">100</span>
+                <p>Following</p>
+            </div>
+            <div class="columns">
+                <span id="followers">55.8M</span>
+                <p>Followers</p>
+            </div>
+        </div>
+
+        <button>Follow</button>
+    </div>
+</div>
+
+{% endblock %}
